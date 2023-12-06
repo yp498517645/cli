@@ -9,7 +9,7 @@ program
   .option("-f, --force", "overwrite target directory if it exits")
   .action((name, options) => {
     //打印结果
-    console.log("program name is ", name);
+    require("../lib/create")(name, options);
   });
 
 // 解析用户执行命令的传入参数
